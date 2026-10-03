@@ -1,0 +1,37 @@
+IdentityVault/
+│
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── authController.js
+│   │   ├── routes/
+│   │   │   └── authRoutes.js
+│   │   ├── services/
+│   │   │   ├── fingerprintService.js
+│   │   │   └── oauthService.js
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   └── AccountLink.js
+│   │   ├── utils/
+│   │   │   └── token.js
+│   │   └── app.js
+│   ├── package.json
+│   └── README.md
+│
+├── mobile/
+│   ├── App.js
+│   ├── screens/
+│   │   ├── FingerprintScreen.js
+│   │   ├── IdentityScreen.js
+│   │   └── RecoveryScreen.js
+│   ├── components/
+│   │   └── Button.js
+│   ├── services/
+│   │   └── api.js
+│   └── package.json
+│
+├── database/
+│   └── schema.sql
+│
+├── README.md
+└── identityvault_spec.md
