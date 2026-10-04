@@ -1,0 +1,12 @@
+
+## Summary
+
+This architecture ensures:
+
+- No raw biometric storage  
+- Strong separation between identity, compute, and token systems  
+- IVT remains non-Ethereum and non-governance  
+- Recovery flows remain secure and auditable  
+- Compute workloads remain ethical and optional  
+- Corporate ownership and token utility remain legally distinct  
+
