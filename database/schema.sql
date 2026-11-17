@@ -1,19 +1,8 @@
 CREATE TABLE users (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT NOT NULL,
-  fingerprint_hash TEXT NOT NULL
-);
-
-CREATE TABLE account_links (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  user_id INTEGER NOT NULL,
-  platform TEXT NOT NULL,
-  account_identifier TEXT NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES users(id)
-);
-
-CREATE TABLE tokens (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
-  token TEXT NOT NULL,
-  expires_at DATETIME NOT NULL
+  email TEXT UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL,
+  fingerprint_hash TEXT,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
