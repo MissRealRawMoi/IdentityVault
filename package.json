@@ -1,0 +1,16 @@
+{
+  "name": "identityvault-backend",
+  "version": "1.0.0",
+  "description": "Biometric-anchored identity and recovery API for IdentityVault",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
