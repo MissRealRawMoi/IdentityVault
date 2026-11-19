@@ -2,10 +2,13 @@ const express = require("express");
 const authRoutes = require("./routes/authRoutes");
 
 const app = express();
+
 app.use(express.json());
+
+app.get("/health", (req, res) => {
+  res.json({ status: "ok", service: "IdentityVault" });
+});
 
 app.use("/auth", authRoutes);
 
-app.listen(3000, () => {
-  console.log("IdentityVault API running on port 3000");
-});
+module.exports = app;
